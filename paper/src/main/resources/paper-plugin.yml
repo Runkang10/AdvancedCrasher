@@ -1,0 +1,18 @@
+name: AdvancedCrash
+description: Crash instead of Kick & Ban
+version: ${version}
+main: io.github.runkang10.AdvancedCrash.paper.AdvancedCrashPaper
+prefix: AdvancedCrash
+api-version: '1.21'
+load: POSTWORLD
+
+permissions:
+  advancedcrash.*:
+    description: Absolute permission to use all features.
+    default: op
+    children:
+      - advancedcrash.crash
+
+  advancedcrash.crash:
+    description: Permission to use /crash command.
+    default: op
